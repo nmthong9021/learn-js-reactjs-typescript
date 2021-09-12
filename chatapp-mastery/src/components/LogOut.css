@@ -1,0 +1,8 @@
+.btn-logout{
+    padding: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
