@@ -111,15 +111,14 @@
 // }
 
 import React from 'react';
+import NotFound from '../components/NotFound';
 import { Container, Row } from 'react-bootstrap';
-import ContactList from '../components/ContactList';
 
 export default function Home(props) {
-
     return (
         <Container fluid>
             <Row>
-                <ContactList />
+                <NotFound></NotFound>
             </Row>
         </Container>
     )

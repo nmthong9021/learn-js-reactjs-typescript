@@ -3,7 +3,6 @@ import { Navbar, Container, Nav } from 'react-bootstrap';
 
 export default function Header(props) {
 
-
     return (
         <Container fluid style={{ paddingLeft: "0px", paddingRight: "0px" }}>
             <div>

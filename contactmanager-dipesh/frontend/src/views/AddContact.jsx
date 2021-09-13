@@ -111,15 +111,14 @@
 // }
 
 import React from 'react';
+import AddContact from '../components/AddContact';
 import { Container, Row } from 'react-bootstrap';
-import ContactList from '../components/ContactList';
 
 export default function Home(props) {
-
     return (
         <Container fluid>
             <Row>
-                <ContactList />
+                <AddContact />
             </Row>
         </Container>
     )

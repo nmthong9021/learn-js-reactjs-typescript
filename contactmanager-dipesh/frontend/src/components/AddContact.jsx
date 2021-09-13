@@ -1,11 +1,15 @@
 import React, { useContext } from 'react';
-import { Form, Button } from 'react-bootstrap';
+import { Form, Button, Container, Row, Col } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
+import { Link } from 'react-router-dom';
 
 import AppContext from '../contactAppContext';
 
 export default function AddContact(props) {
-    const { dispatch } = useContext(AppContext);
+    const { dispatch, store } = useContext(AppContext);
+    // console.log("store nè: " + store.cards);
+    // console.log("ok add");
+
     const { register, handleSubmit, formState: { errors }, setValue } = useForm();
 
     const frmLogin_onSubmit = (data) => {
@@ -14,9 +18,9 @@ export default function AddContact(props) {
             type: 'add_card',
             payload: {
                 new_card: {
-                        name: data.name,
-                        email: data.email,
-                        image: "https://img.hoidap247.com/picture/user/20210526/tini_1622010406762.jpg"
+                    name: data.name,
+                    email: data.email,
+                    image: "https://img.hoidap247.com/picture/user/20210526/tini_1622010406762.jpg"
                 },
             }
         });
@@ -48,6 +52,23 @@ export default function AddContact(props) {
 
     return (
         <div className="col-sm-10 col-sm-12 col-md-10 col-lg-8 col-xl-5">
+            {/* <Container fluid>
+                <Row>
+                    <Col xl={12}>
+                        <Link to="/">
+                            <Button variant="secondary" type="submit" className="pl-4 pr-4 ml-0" style={{ float: "left", fontSize: "1rem", fontWeight: "bold" }}>
+                                Back To Home
+                            </Button>
+                        </Link>
+                    </Col>
+                </Row>
+            </Container> */}
+            <Link to="/">
+                <Button variant="secondary" type="submit" className="pl-4 pr-4 ml-1" style={{ float: "left", fontSize: "1rem", fontWeight: "bold" }}>
+                    Back To Home
+                </Button>
+            </Link>
+            <br></br><br></br>
             <h3 className="mt-2 pl-2">Add Contact</h3>
             <Form className="mt-3 pl-2 mb-3" onSubmit={handleSubmit(frmLogin_onSubmit)}>
                 <Form.Group controlId="formBasicName">
