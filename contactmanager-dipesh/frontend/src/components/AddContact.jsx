@@ -1,12 +1,13 @@
 import React, { useContext } from 'react';
 import { Form, Button, Container, Row, Col } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 import AppContext from '../contactAppContext';
 
 export default function AddContact(props) {
     const { dispatch, store } = useContext(AppContext);
+    const history = useHistory();
     // console.log("store nè: " + store.cards);
     // console.log("ok add");
 
@@ -26,6 +27,8 @@ export default function AddContact(props) {
         });
         setValue("name", "");
         setValue("email", "");
+        history.push("/");
+
         // try {
         //     const res = await axiosInstance.post('auth', data);
         //     if (res.data.authenticated) {
