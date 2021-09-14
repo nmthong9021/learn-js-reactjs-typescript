@@ -6,7 +6,7 @@ import AddContact from './views/AddContact';
 import Info from './views/Info';
 
 import reducer from "./contactAppReducer";
-import { axiosInstance } from "./utils/contactAppUtil";
+//import { axiosInstance } from "./utils/contactAppUtil";
 import AppContext from "./contactAppContext.js";
 
 import {
@@ -78,7 +78,7 @@ function App() {
     // <div>
     //    <Home></Home>
     // </div>
-    <>
+    // <>
       <AppContext.Provider value={{ store, dispatch }}>
         <Router>
           <Header></Header>
@@ -90,7 +90,7 @@ function App() {
           </Switch>
         </Router>
       </AppContext.Provider>
-    </>
+    //</>
   );
 }
 

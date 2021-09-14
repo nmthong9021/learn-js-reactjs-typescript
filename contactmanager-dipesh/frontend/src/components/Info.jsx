@@ -2,14 +2,14 @@ import React, { useContext } from 'react';
 import { Card, Button, Container } from 'react-bootstrap';
 import AppContext from '../contactAppContext';
 import { useParams } from 'react-router-dom';
-import { Link, useHistory, Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import NotFound from './NotFound';
 
 export default function Info(props) {
     //console.log("info nè...");
     let { store } = useContext(AppContext);
     let { id } = useParams();
-    const history = useHistory();
+    //const history = useHistory();
 
     /*
     const res = store.cards.filter(function (c) {
@@ -60,7 +60,7 @@ export default function Info(props) {
     // )
 
     return (
-        <>
+        <div>
             {!store.cards.filter(c => c.id + "" === id).length ?
                 (
                     <NotFound></NotFound>
@@ -92,6 +92,6 @@ export default function Info(props) {
                     </Container>
                 )
             }
-        </>
+        </div>
     )
 }
