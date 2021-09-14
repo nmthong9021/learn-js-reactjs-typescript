@@ -7,7 +7,6 @@ export default function reducer(state, action) {
 
     case 'add_card':
       return {
-        // ...state,
         cards: [...state.cards, { ...action.payload.new_card, id: state.cards.length, isExist: true}]
       }
 

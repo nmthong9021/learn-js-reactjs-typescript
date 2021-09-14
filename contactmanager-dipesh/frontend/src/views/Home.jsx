@@ -114,12 +114,12 @@ import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import ContactList from '../components/ContactList';
 
-export default function Home(props) {
+export default function Home({number}) {
 
     return (
         <Container fluid>
             <Row>
-                <ContactList />
+                <ContactList number={number}/>
             </Row>
         </Container>
     )

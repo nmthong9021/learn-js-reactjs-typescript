@@ -1,3 +1,15 @@
+# Tự học: 
+1. Phân Trang <br>
+Trang chủ Home hiển thị 4 user <br>
+state : pageIndex (= 1,2,3,...4) <br>
+--> show những thằng store.cards[4*pageIndex - 4]-->store.cards[4*pageIndex  - 1] <br>
+Trừ 4 thằng đầu, kể từ thằng số 2, hiển thị trên link url là /page/{pageIndex}
+<br>
+2. Đánh giá: 
+Click vào icon tăng, giảm <span style="color: blue; font-weight: bold">(like, dislike)</span> trong Info
+3. Phần bình luận dưới Info
+4. Click nút delete, nó hiện modal hỏi có muốn xóa ?
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

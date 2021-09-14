@@ -8,19 +8,20 @@ import Info from './views/Info';
 import reducer from "./contactAppReducer";
 //import { axiosInstance } from "./utils/contactAppUtil";
 import AppContext from "./contactAppContext.js";
-import {data} from './data/datafetch'
+import { data } from './data/datafetch'
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Redirect
 } from 'react-router-dom';
 import Header from './components/Header';
 import ScrollButton from './components/ScrollButton/ScrollButton';
 
 function App() {
   const initialAppState = {
-    cards: [],
+    cards: []
   }
   const [store, dispatch] = useReducer(reducer, initialAppState);
 
@@ -52,20 +53,29 @@ function App() {
     //    <Home></Home>
     // </div>
     // <>
-      <AppContext.Provider value={{ store, dispatch }}>
-        <Router>
-          <Header></Header>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/add" component={AddContact} />
-            <Route exact path="/info/:id" component={Info} />
-            <Route path="*" component={NotFound} />
-          </Switch>
-           <ScrollButton></ScrollButton>
-        </Router>
-      </AppContext.Provider>
+    <AppContext.Provider value={{ store, dispatch }}>
+      <Router>
+        <Header></Header>
+        <Switch>
+          <Route exact path="/">
+            <Home number={1}></Home>
+          </Route>
+          <Route exact path="/page/1">
+            <Redirect to={{ pathname: '/' }} />
+          </Route>
+          <Route exact path="/page/:number" render={(props) =>
+            <Home number={props.match.params.number} />
+          } />
+          <Route exact path="/add" component={AddContact} />
+          <Route exact path="/info/:id" component={Info} />
+          <Route path="*" component={NotFound} />
+        </Switch>
+        <ScrollButton></ScrollButton>
+      </Router>
+    </AppContext.Provider>
     //</>
   );
 }
+
 
 export default App;
