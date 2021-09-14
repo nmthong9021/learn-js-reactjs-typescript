@@ -12,32 +12,6 @@ export default function ContactList({ number }) {
     const number1 = parseInt(number, 10);
     //const [pageIndex, setPageIndex] = useState(number1);
 
-
-    /// Sai ! Nó sẽ push sang đường dẫn hiện tại + phần thêm vào (history + ...)
-    // const handleClickFirst = () => {
-    //     setPageIndex(1);
-    // }
-
-    // const handleClickLast = () => {
-    //     setPageIndex(10);
-    // }
-
-    // const handleClick = function (number1) {
-    //     history.push(`page/${number1}`);
-    // }
-
-    // const handleClickPrev = function (number1) {
-    //     if (number1 > 1) {
-    //         history.push(`page/${number1 - 1}`);
-    //     }
-    // }
-
-    // const handleClickNext = function (number1) {
-    //     if (number1 < 10) {
-    //         history.push(`page/${number1 + 1}`);
-    //     }
-    // }
-
     return number1 < 1 || number1 > 10 ? (
         <NotFound></NotFound>
     ) : (
