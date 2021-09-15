@@ -21,7 +21,9 @@ export default function AddContact(props) {
                 new_card: {
                     name: data.name,
                     email: data.email,
-                    image: "https://img.hoidap247.com/picture/user/20210526/tini_1622010406762.jpg"
+                    image: "https://img.hoidap247.com/picture/user/20210526/tini_1622010406762.jpg",
+                    like: 0,
+                    dislike: 0
                 },
             }
         });
