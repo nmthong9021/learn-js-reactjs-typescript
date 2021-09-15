@@ -38,6 +38,15 @@ function App() {
           cards: res.data,
         }
       });
+      
+      localStorage.removeItem("contactManagerApp_cards");
+      // console.log("qwer");
+      var cards = [];
+        for (let i = 0; i <= 30; i++) {
+            cards[i] = { like: false, dislike: false }
+        }
+        const str = JSON.stringify(cards);
+        localStorage.setItem("contactManagerApp_cards", str);
 
       // const LOCAL_STORAGE_KEY = "12345";
       // localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(abcde));

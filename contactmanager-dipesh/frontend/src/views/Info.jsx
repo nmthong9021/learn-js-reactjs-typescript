@@ -111,16 +111,17 @@
 // }
 
 import React from 'react';
-import { Container, Row } from 'react-bootstrap';
+//import { Container, Row } from 'react-bootstrap';
 import Info from '../components/Info';
 
 export default function Home(props) {
 
     return (
-        <Container fluid>
-            <Row>
-                <Info></Info>
-            </Row>
-        </Container>
+        // <Container fluid>
+        //     <Row>
+        //         <Info></Info>
+        //     </Row>
+        // </Container>
+        <Info></Info>
     )
 }
