@@ -1,0 +1,43 @@
+/* .Header{
+    background-color: rgba(162, 182, 182, 0.877);
+    
+}
+
+.links{
+    padding-right: .5rem;
+    padding-left: .5rem;
+    color: rgba(0,0,0,.55);
+    text-decoration: none;
+    display: block;
+    padding: .5rem 1rem;
+}
+.links:hover{
+    color: black;
+}
+.logo{
+    font-weight: 700;
+    font-size: 30px;
+    padding: 12px ;
+} */
+
+.links{
+    margin-right: 30px;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    vertical-align: text-bottom;
+}
+
+.links:hover {
+    color: rgb(0, 113, 240);
+    text-decoration: none;
+}
+
+.selected{
+    color: rgb(0, 113, 240);
+    text-decoration: none;
+}
+
