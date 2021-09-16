@@ -40,4 +40,19 @@
     color: rgb(0, 113, 240);
     text-decoration: none;
 }
+.dropdown-toggle:after {   /* bỏ nút tam giác sau */
+    display: none;
+}
+.dropdown-item{
+    text-align: center;
+}
+.dropdown-menu{
+    background-color: yellow;
+    min-width: 5rem;
+    left: -1rem;
+}
+/* a[aria-haspopup="true"]{
+    background-color: pink;
+} */
+
 

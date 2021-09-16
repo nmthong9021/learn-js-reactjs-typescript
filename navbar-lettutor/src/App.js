@@ -86,6 +86,10 @@ function App() {
           <Route exact path="/add" component={AddContact} />
           <Route exact path="/info/:id" component={Info} />
           <Route path="*" component={NotFound} /> */}
+
+
+          {/* Tham khảo theo :
+          https://www.youtube.com/watch?v=VzWBLj_CfpE */}
           <Route exact path='/login'><Login/></Route>
           <Route exact path='/' component={true?HomeEng:Login} />
           <Route exact path='/thu' component={true?Thu:Login} />
