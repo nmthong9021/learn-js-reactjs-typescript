@@ -38,7 +38,9 @@ export default function Header(props) {
        e.preventDefault();
        alert("ok");
     }
-
+    
+    
+    
 
     return (
         <>
@@ -110,7 +112,6 @@ export default function Header(props) {
                                 show={show1}
                                 onMouseEnter={showDropdown1}
                                 onMouseLeave={hideDropdown1}
-                                href="/"
                                 alignLeft
                             >
                                 <NavDropdown.Item>
