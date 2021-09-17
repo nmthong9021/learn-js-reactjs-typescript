@@ -6,7 +6,7 @@ https://react-bootstrap-v4.netlify.app/components/navbar/
 
 Nhiệm vụ: 
 * Tự học ReactJS (ứng dụng với Lettutor)
-1. Build thử 1 cái navbar nào đó tùy ý.
+1. Build thử 1 cái navbar nào đó tùy ý.:heavy_check_mark:
 2. Build thử (sơ lược trang lettutor)
 3. Tìm hiểu Video Conference (xem, upload, lưu, tải,...)
 4. Xem lại ReactJS Roadmap để bổ sung
@@ -15,7 +15,7 @@ Nhiệm vụ:
 6. (For Online Auction) reCaptcha, các component khác (select, table, react-quill, nơi lưu ảnh,...)
 *Học di động NC:
 1. Xem (chỉ xem) nhanh về Dart
-2. Tự học React Native (chú ý: xem lộ trình học React Native Nguyễn Hữu Hòa)
+2. Tự học React Native (chú ý: xem lộ trình học React Native Nguyễn Hữu Hòa) <br/>
 *Lấy lại căn bản: 
 1. Xem video Restful API
 2. Tìm hiểu Real time/ Real time với ReactJS/React-Native, Chat App...
